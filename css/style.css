@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+/* body font */
+@import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great);
+/* hero font */
+body{
+font-family: 'PT Sans', sans-serif;
+}
+
+h2{
+  text-align:center;
+}
+ul{
+  list-style-type:none;
+}
+hr{
+  width:60px;
+}
+li{
+  padding-top:5px;
+
+}
+
+
+li:hover{
+  color:red;
+}
+
+.navBar{
+  /* width:140px;
+  position:fixed;
+  border-radius:0;
+  height:100%;
+  background:blue; */
+
+   position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-right:1px black solid;
+    width: 180px;
+    padding: 10px;
+    padding-top:250px;
+    text-align:center;
+    text-decoration:none;
+    background-color:#212226;
+    color:white;
+
+}
+
+.pageContent{
+  margin-left:200px;
+  background-image: url("images/hero.jpg");
+  height:600px;
+  background-repeat:no-repeat;
+}
+
+.lowerPage{
+  margin-left:200px;
+}
+
+#hero_wrapper{
+
+  font-size:60px;
+}
+#heroText{
+  font-family: 'Fredericka the Great', cursive;
+  padding-left:10px;
+  text-align: center;
+}
+
+
