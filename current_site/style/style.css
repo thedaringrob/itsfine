@@ -1,0 +1,116 @@
+
+@import 'foundation';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+@import 'https://fonts.googleapis.com/css?family=Raleway:300,400,500';
+
+/*headers*/
+@import 'https://fonts.googleapis.com/css?family=Oswald:300';
+
+
+body, div, img{
+  background:url("../images/grunge_wall.png") ;
+  font-family: 'Raleway', sans-serif;
+  /*font-weight: medium 300;*/
+  font-size: 20px;
+}
+
+a{
+  color: black;
+}
+
+h1, h2, h3{
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold 300;
+}
+img{
+  /*max-width: 100%;*/
+  border:1px solid black;
+}
+form{
+  /*max-width:70%;*/
+  align-items: center;
+}
+hr{
+  border-bottom: 1px solid black;
+}
+div>.landing>p{
+  margin-left: 10px;
+  margin-right:10px;
+}
+
+/*.full_bkgrnd{
+  background: url("../images/hero.jpg");
+}*/
+
+.rsvp_wrapper{
+  margin-top: 2%;
+  margin-right: 5%;
+  margin-left:5%;
+}
+.social{
+color: #05b6b0;
+border: 1.25px solid;
+border-radius: 5%;
+}
+
+.social:hover{
+color:#05b6b0;
+}
+
+.poster{
+  /*background-image: url("../images/poster.jpg");*/
+}
+
+.endorsements>div{
+  /*border: 1px solid black;
+  margin-top: 10px*/
+}
+
+.quotes{
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+
+.thumbnail{
+  border-radius: 50%;
+}
+.card {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.card_3 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.personal_bio{
+  padding-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%
+}
+
+.partnerships{
+  border-left:1px solid black;
+  border-right: 1px solid black;
+}
+
+.personal_site{
+  font-size: 25px;
+}
+
+/*.carousel_wrapper{
+  width:0 auto;
+  height:400px;
+}*/
+
+/*
+#bar{
+  box-shadow: 2px 2px black;
+}*/
+
+/*#header{
+  background-color: black;
+}*/
