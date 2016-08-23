@@ -26,51 +26,43 @@
          <div class="form">
           <div class="row">
            <div class="medium-12">
-             <input type="text" placeholder="First Name">
+             <input type="text" placeholder="First Name" class="first_name">
            </div>
              <div class="medium-12">
-             <input type="text" placeholder="Last Name">
+             <input type="text" placeholder="Last Name" class="last_name">
            </div>
          </div>
 
 
                <div class="medium-4 columns">
-                   <input type="text" placeholder="Phone">
+                   <input type="text" placeholder="Phone" class="phone">
                  </div>
                  <div class="medium-4 columns">
-                   <input type="text" placeholder="Email">
+                   <input type="text" placeholder="Email" class="email">
                  </div>
 
                  <div class="medium-4 columns">
-                   <input type="text" placeholder="Party Size">
+                   <input type="text" placeholder="Party Size" class="party">
                  </div>
         </div>
         <div class="input-group-button">
-        <input type="submit" class="button large hollow" value="Submit">
+        <input type="submit" class="button large hollow social card" id="submit" value="Submit">
+        </div>
+        <div class="success">
+
         </div>
 
-        <!-- <iframe src="https://player.vimeo.com/video/179269000?byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
 
 
 
-
-        <a href="http://www.twitter.com/itsfineaseries" target="_blank" class="button large hollow">Twitter</a>
-        <a href="http://www.instagram.com/itsfineaseries" target="_blank" class="button large hollow">Instagram</a>
-        <a href="http://fromtheheartproductions.networkforgood.com/projects/16180-tv-web-series-it-s-fine-a-series" target="_blank" class="button large hollow">Donate</a>
+        <a href="http://www.twitter.com/itsfineaseries" target="_blank" class="button large hollow social card">Twitter</a>
+        <a href="http://www.instagram.com/itsfineaseries" target="_blank" class="button large hollow social card">Instagram</a>
+        <a href="http://fromtheheartproductions.networkforgood.com/projects/16180-tv-web-series-it-s-fine-a-series" target="_blank" class="button large hollow social card">Donate</a>
 
 
       </div>
 
 
-
-
-<!-- //////////ADD THSE BACK IN?????????????? -->
-
-
-<!-- <a href="http://www.twitter.com/itsfineaseries" target="_blank" class="button large hollow">Twitter</a>
-<a href="http://www.instagram.com/itsfineaseries" target="_blank" class="button large hollow">Instagram</a>
-<a href="http://fromtheheartproductions.networkforgood.com/projects/16180-tv-web-series-it-s-fine-a-series" target="_blank" class="button large hollow">Donate</a>
- -->
 
 
 
@@ -79,7 +71,7 @@
 
         </div>
       </form>
-      <!-- wrapper end -->
+
     </div>
 
 
@@ -87,7 +79,32 @@
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
   <script>
-    $(document).foundation();
+  "use strict";
+  (function(){
+
+      $("#submit").on("click", function(event){
+        event.preventDefault();
+          // var fname = document.getElementsByClassName('first_name').value;
+          // var lname = document.getElementsByClassName('last_name').value;
+          // var email = document.getElementsByClassName('email').value;
+          // var phone = document.getElementsByClassName('phone').value;
+          // var party = document.getElementsByClassName('party').value;
+          var fname = $('.first_name').val();
+          var lname = $('.last_name').val();
+          var email = $('.email').val();
+          var phone = $('.phone').val();
+          var party = $('.party').val();
+
+          if (fname == '' || lname == '' || email == '' || phone == '' || party == ''){
+            alert("Please complete all fields!")
+          }else{
+            console.log('clicked why go away?')
+            document.getElementsByClassName('success').innerHTML="Thanks! Can't wait to see you!";
+
+          }
+        });
+})();
+
   </script>
 </body>
 </html>

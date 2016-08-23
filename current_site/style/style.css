@@ -1,5 +1,4 @@
 
-@import 'foundation';
 @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
 @import 'https://fonts.googleapis.com/css?family=Raleway:300,400,500';
 
@@ -38,9 +37,6 @@ div>.landing>p{
   margin-right:10px;
 }
 
-/*.full_bkgrnd{
-  background: url("../images/hero.jpg");
-}*/
 
 .rsvp_wrapper{
   margin-top: 2%;
@@ -55,15 +51,6 @@ border-radius: 5%;
 
 .social:hover{
 color:#05b6b0;
-}
-
-.poster{
-  /*background-image: url("../images/poster.jpg");*/
-}
-
-.endorsements>div{
-  /*border: 1px solid black;
-  margin-top: 10px*/
 }
 
 .quotes{
@@ -100,17 +87,3 @@ color:#05b6b0;
 .personal_site{
   font-size: 25px;
 }
-
-/*.carousel_wrapper{
-  width:0 auto;
-  height:400px;
-}*/
-
-/*
-#bar{
-  box-shadow: 2px 2px black;
-}*/
-
-/*#header{
-  background-color: black;
-}*/
