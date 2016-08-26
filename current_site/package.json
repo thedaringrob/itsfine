@@ -1,0 +1,21 @@
+{
+  "name": "current_site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fine_db.js",
+  "dependencies": {
+    "bcrypt": "^0.8.7",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-session": "^1.14.0",
+    "mustache": "^2.2.1",
+    "mustache-express": "^1.2.2",
+    "pg-promise": "^5.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
