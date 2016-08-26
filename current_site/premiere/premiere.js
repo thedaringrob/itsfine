@@ -8,15 +8,17 @@ console.log('script loaded');
 // 3-replace dom elements
 
 
-  $("#submit").on("click", function(){
+  $("#submit").on("click", function(event){
+    event.preventDefault();
     console.log('clicked');
+
     allFields();
   });
 
 
 var allFields = function(){
 
-         event.preventDefault();
+
 
           var fname = $('.first_name').val();
           var lname = $('.last_name').val();
@@ -44,18 +46,18 @@ var allFields = function(){
 function confirmedFields(){
   console.log('remove function fired');
   $('.response').remove();
-  
-  // addContent();
 
-//remove the form and buttons
-// $(".response").innerHTML("Got it! Can't wait to see you.");
+  addContent();
 
-//replace with this text "Got it! Can't wait to see you."
+// remove the form and buttons
+// $(".response").append("Got it! Can't wait to see you.");
+
+// replace with this text "Got it! Can't wait to see you."
 }
 
-// var addContent = function(){
-//   // console.log('insert function here!');
-//   // $('div.confirmed').html('<div>Great!</div>');
-// };
+var addContent = function(){
+  console.log('insert function here!');
+  $('.confirmed').append('<h1>Got it! Can\'t wait to see you!</h1>');
+};
 
 });
